@@ -1,11 +1,15 @@
 package group13.application.characters.asteroid;
 
+import javafx.geometry.Point2D;
+
 public class SmallAsteroid extends Asteroid {
-    Double[] coors;
-    double speed;
-    public SmallAsteroid(){
-        super(new Double[]{8.0, 0.0, 15.0, 3.0, 13.0, 13.0, 9.0, 15.0, 0.0, 10.0});
-        this.speed = 300;
+
+    public SmallAsteroid(Point2D position, double speed){
+        super(speed, position);
+    }
+
+    public SmallAsteroid() {
+        super(1.5);
     }
 
 }

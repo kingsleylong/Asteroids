@@ -1,6 +1,7 @@
 module group13.application {
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.graphics;
 
 
     opens group13.application to javafx.fxml;
@@ -9,6 +10,4 @@ module group13.application {
     opens group13.application.common to javafx.fxml;
     exports group13.application.characters;
     opens group13.application.characters to javafx.fxml;
-    exports group13.application.examples;
-    opens group13.application.examples to javafx.fxml;
 }

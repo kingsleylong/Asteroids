@@ -1,17 +1,18 @@
 package group13.application.characters.asteroid;
 
+import javafx.scene.transform.Scale;
+
 public class LargeAsteroid extends Asteroid {
-    Double[] coors ;
-    double speed;
     public LargeAsteroid(){
-        super(new Double[]{20.0, 0.0, 60.0, 40.0, 35.0, 60.0, 0.0,45.0, 4.0, 20.0});
-        this.speed = 80;
+        super(0.5);
     }
 
-    public LargeAsteroid(Double[] coors){
-        super(coors);
-        this.coors = coors;
-
+    @Override
+    public Scale resize(){
+        Scale s = new Scale();
+        s.setX(5.5);
+        s.setY(5.5);
+        return s;
     }
 
 }
