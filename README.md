@@ -1,4 +1,4 @@
-This project is an asteroid game.
+This project is an asteroid game written in Java.
 
 The IDE used is IntelliJ IDEA. However, you can import it into other IDE too.
 
